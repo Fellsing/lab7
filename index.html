@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dataform">
+        <form>
+        <p>Ваша зарплата:</p>
+        <input id="salary" type="number" placeholder="Введите значение Вашей зарплаты">
+        <p>Ваш Возраст:</p>
+        <input id="age" type="number" placeholder="Сколкьо Вам лет?">
+        <p>Ваш пол: <br>
+            <input  type="radio" name="gender">Мужской
+            <input  type="radio" name="gender">Женский
+        </p>
+        <p>Ваш стаж работы:</p>
+        <input id="staj" type="number" placeholder="Каков Ваш стаж работы?">
+        <p>Ваш юридический статус: <br>
+            <input  type="radio" value="fiz" name="status" onclick="confines()">Физ. лицо
+            <input  type="radio" value="ur" name="status" onclick="confines()">Юр. лицо
+        </p>
+        <p>Кол-во просроченных кредитов:</p>
+        <input id="prCredits" type="number" placeholder="Просроченные кредиты">
+        <p>Форма выдачи кредита: <br>
+            <input  type="radio" name="creditForm">Нал
+            <input  type="radio" name="creditForm">Безнал
+        </p>
+        <p>Наличие залогового имущества: <br>
+            <input id="zalogYes" type="radio" name="zalog" onclick="kek()" onclick="confines()" >Имеется
+            <input id="zalogNo" type="radio" name="zalog" onclick="kek()" >Не имеется<br>
+            <input id="sumOfZalog" type="number" style="visibility: hidden;" placeholder="Введите сумму залога">
+        </p>
+        <p>Запрашиваемая сумма:</p>
+        <input id="summ" type="number" max="3000" placeholder="Введите значение суммы кредита">
+        
+    </form>
+    <button  id="subm" onclick="submit()">Подтвердить данные</button>
+    </div>
+
+
+    <script type = "text/javascript" src = "main.js"></script>
+
+
+
+</body>
+
+
+</html>
